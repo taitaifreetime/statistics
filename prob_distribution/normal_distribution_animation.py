@@ -78,7 +78,8 @@ def animate_normal_distribution():
             mean = float(mean)
             ax.set_title(f"Normal Distribution (mean={mean:.2f}, variance=??)")
             ani = FuncAnimation(fig, update_variance, frames=n, init_func=init, blit=False, interval=200)
-
+        
+        # ani.save('normal_distribution.gif', writer='imagemagick', fps=10)
         plt.tight_layout()
         plt.show()
 

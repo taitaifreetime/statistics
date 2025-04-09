@@ -7,4 +7,5 @@ def visualize_distribution(x, y, title, xlabel, ylabel):
     plt.ylabel(ylabel)
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.tight_layout()
+    plt.savefig(title+".png")
     plt.show()
